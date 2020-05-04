@@ -1,0 +1,5 @@
+com/dpaula/ecommerce/KafkaDispatcher.class
+com/dpaula/ecommerce/MeuGsonSerializer.class
+com/dpaula/ecommerce/ConsumerFunction.class
+com/dpaula/ecommerce/KafkaService.class
+com/dpaula/ecommerce/MeuGsonDeserializer.class

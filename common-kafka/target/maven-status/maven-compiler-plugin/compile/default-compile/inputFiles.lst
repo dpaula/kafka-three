@@ -1,0 +1,5 @@
+/Users/fernandodelima/IdeaProjects/kafka-two/common-kafka/src/main/java/com/dpaula/ecommerce/KafkaService.java
+/Users/fernandodelima/IdeaProjects/kafka-two/common-kafka/src/main/java/com/dpaula/ecommerce/MeuGsonDeserializer.java
+/Users/fernandodelima/IdeaProjects/kafka-two/common-kafka/src/main/java/com/dpaula/ecommerce/ConsumerFunction.java
+/Users/fernandodelima/IdeaProjects/kafka-two/common-kafka/src/main/java/com/dpaula/ecommerce/MeuGsonSerializer.java
+/Users/fernandodelima/IdeaProjects/kafka-two/common-kafka/src/main/java/com/dpaula/ecommerce/KafkaDispatcher.java
