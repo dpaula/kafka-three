@@ -15,15 +15,13 @@ import java.util.regex.Pattern;
  */
 public class KafkaService<T> implements Closeable {
     private final ConsumerFunction parse;
-    private final Class<T> type;
     private final Map<String, String> overrideProperties;
-    private final KafkaConsumer<String, T> consumer;
+    private final KafkaConsumer<String, Message<T>> consumer;
     private String grupoId;
 
-    KafkaService(String grupoId, String topico, ConsumerFunction parse, Class<T> type, Map<String, String> propriedadesEstras) {
+    KafkaService(String grupoId, String topico, ConsumerFunction<T> parse, Class<T> type, Map<String, String> propriedadesEstras) {
         this.grupoId = grupoId;
         this.parse = parse;
-        this.type = type;
         this.overrideProperties = propriedadesEstras;
         //configurando consumidor de mensagens, cuja chave e valor sejam String, com as propriedades de configuração
         this.consumer = new KafkaConsumer<>(properties());
@@ -35,10 +33,9 @@ public class KafkaService<T> implements Closeable {
 
     }
 
-    KafkaService(String grupoId, Pattern topico, ConsumerFunction parse, Class<T> type, Map<String, String> propriedadesEstras) {
+    KafkaService(String grupoId, Pattern topico, ConsumerFunction<T> parse, Class<T> type, Map<String, String> propriedadesEstras) {
         this.grupoId = grupoId;
         this.parse = parse;
-        this.type = type;
         this.overrideProperties = propriedadesEstras;
         //configurando consumidor de mensagens, cuja chave e valor sejam String, com as propriedades de configuração
         this.consumer = new KafkaConsumer<>(properties());
@@ -62,9 +59,6 @@ public class KafkaService<T> implements Closeable {
         properties.setProperty(ConsumerConfig.GROUP_ID_CONFIG, grupoId);
         // definindo um id para o consumidor
         properties.setProperty(ConsumerConfig.CLIENT_ID_CONFIG, grupoId + "-" + UUID.randomUUID().toString());
-
-        // definindo a nossa propriedade para definir o tipo que sera deserealizado
-        properties.setProperty(MeuGsonDeserializer.TYPE_CONFIG, type.getName());
 
         // definindo as propriedades que deseja sobreescrever
         properties.putAll(overrideProperties);

@@ -57,15 +57,15 @@ public class BathSendMessageService {
     /**
      * Corpo da execução da mensagem
      */
-    private void parse(ConsumerRecord<String, String> record) throws SQLException, ExecutionException, InterruptedException {
+    private void parse(ConsumerRecord<String, Message<String>> record) throws SQLException, ExecutionException, InterruptedException {
+        final var message = record.value();
         System.out.println("--------------------------------------------------");
         System.out.println("Processando novo batch");
-        System.out.println("Tópico " + record.value());
+        System.out.println("Tópico " + message.getPayload());
 
-        final var topico = record.value();
 
         for(User user: getAllUsers()){
-            userDispatcher.send(topico, user.getUuid(), user);
+            userDispatcher.send(message.getPayload(), user.getUuid(), user);
         }
 
     }

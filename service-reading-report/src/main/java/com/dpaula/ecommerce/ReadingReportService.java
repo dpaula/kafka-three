@@ -32,11 +32,13 @@ public class ReadingReportService {
      * Corpo da execução da mensagem
      *
      */
-    private void parse(ConsumerRecord<String, User> record) throws IOException {
+    private void parse(ConsumerRecord<String, Message<User>> record) throws IOException {
+        var message = record.value();
+
         System.out.println("--------------------------------------------------");
         System.out.println("Processando relatório para Usuário: "+record.value());
 
-        var user = record.value();
+        final var user = message.getPayload();
 
         var target = new File(user.getReportPath());
 
