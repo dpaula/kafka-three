@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.dpaula</groupId>
-    <artifactId>kafka-two</artifactId>
+    <artifactId>kafka-three</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <build>
@@ -29,6 +29,7 @@
         <module>service-users</module>
         <module>service-http-ecommerce</module>
         <module>service-users2</module>
+        <module>service-reading-report</module>
     </modules>
 
     <dependencies>
