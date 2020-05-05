@@ -14,8 +14,6 @@ import java.util.UUID;
 public class CreateUserService {
     private final Connection connection;
 
-//    private final KafkaDispatcher<Order> orderDispatcher = new KafkaDispatcher<>();
-
     CreateUserService() throws SQLException {
 
         // conexão simples ao banco
@@ -38,17 +36,6 @@ public class CreateUserService {
     }
 
     public static void main(String[] args) throws SQLException {
-
-//        var userService = new CreateUserService();
-//
-//        try (KafkaService<Order> service = new KafkaService<>(CreateUserService.class.getSimpleName(),
-//                "ECOMMERCE_NEW_ORDER",
-//                userService::parse,
-//                Order.class,
-//                Map.of())) {
-//
-//            service.run();
-//        }
 
         var fraudService = new CreateUserService();
 

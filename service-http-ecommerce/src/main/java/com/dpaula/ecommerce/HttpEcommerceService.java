@@ -22,6 +22,8 @@ public class HttpEcommerceService {
         //definindo o servlet que sera chamado ao acessar o path informado com /new
         contexto.addServlet(new ServletHolder(new NewOrderServlet()), "/new");
 
+        contexto.addServlet(new ServletHolder(new GenerateAllReportsServlet()), "/admin/generate-reports");
+
         //passando um contexto para o servidor trabalhar com as requisicoes
         server.setHandler(contexto);
 
