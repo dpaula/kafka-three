@@ -26,15 +26,15 @@ public class FraudDetectorService {
 
     /**
      * Corpo da execução da mensagem
-     *
      */
-    private void parse(ConsumerRecord<String, Order> record) throws ExecutionException, InterruptedException {
+    private void parse(ConsumerRecord<String, Message<Order>> record) throws ExecutionException, InterruptedException {
         System.out.println("--------------------------------------------------");
         System.out.println("Processando novo pedido, verificando por fraude");
         System.out.println("Chave " + record.key());
         System.out.println("Valor " + record.value());
         System.out.println("Partition " + record.partition());
         System.out.println("Offset " + record.offset());
+        final var message = record.value();
 
         try {
             Thread.sleep(5000);
@@ -42,15 +42,18 @@ public class FraudDetectorService {
             e.printStackTrace();
         }
 
-        final var order = record.value();
+        final var order = message.getPayload();
 
-        if(ehFraude(order)){
+        //criando um novo correlationid e concatenando no id das mensagens anteriores
+        final var correlationId = message.getId().continueWith(FraudDetectorService.class.getSimpleName());
+
+        if (ehFraude(order)) {
             // caso o valor do pedido for maior ou igual a 4500, entao é como se fosse fraude
             System.out.println("Pedido detectado como FRAUDE!");
-            orderDispatcher.send("ECOMMERCE_ORDER_REJECTED", order.getEmail(), order);
+            orderDispatcher.send("ECOMMERCE_ORDER_REJECTED", order.getEmail(), correlationId, order);
         } else {
-            System.out.println("Pedido aprovado: "+order);
-            orderDispatcher.send("ECOMMERCE_ORDER_APPROVED", order.getEmail(), order);
+            System.out.println("Pedido aprovado: " + order);
+            orderDispatcher.send("ECOMMERCE_ORDER_APPROVED", order.getEmail(), correlationId, order);
         }
 
         System.out.println("Pedido processado");

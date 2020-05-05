@@ -14,9 +14,9 @@ import java.util.concurrent.ExecutionException;
  */
 public class NewOrderServlet extends HttpServlet {
 
-    private final KafkaDispatcher<Order> orderDispatcher = new KafkaDispatcher<Order>();
+    private final KafkaDispatcher<Order> orderDispatcher = new KafkaDispatcher<>();
 
-    private final KafkaDispatcher<String> emailDispatcher = new KafkaDispatcher<String>();
+    private final KafkaDispatcher<String> emailDispatcher = new KafkaDispatcher<>();
 
     @Override
     public void destroy() {
@@ -38,10 +38,10 @@ public class NewOrderServlet extends HttpServlet {
 
             var order = new Order(orderId, amount, email);
 
-            orderDispatcher.send("ECOMMERCE_NEW_ORDER", email, order);
+            orderDispatcher.send("ECOMMERCE_NEW_ORDER", email, new CorrelationId(NewOrderServlet.class.getSimpleName()), order);
 
             var emailCode = "Obrigado pelo pedido! Estamos processando seu pedido!";
-            emailDispatcher.send("ECOMMERCE_SEND_EMAIL", email, emailCode);
+            emailDispatcher.send("ECOMMERCE_SEND_EMAIL", email, new CorrelationId(NewOrderServlet.class.getSimpleName()), emailCode);
 
             System.out.println("Processo da nova compra terminado!!");
 

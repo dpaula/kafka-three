@@ -45,7 +45,7 @@ public class BathSendMessageService {
         var bathService = new BathSendMessageService();
 
         try (var service = new KafkaService<>(BathSendMessageService.class.getSimpleName(),
-                "SEND_MESSAGE_TO_ALL_USERS",
+                "ECOMMERCE_SEND_MESSAGE_TO_ALL_USERS",
                 bathService::parse,
                 String.class,
                 Map.of())) {
@@ -65,7 +65,11 @@ public class BathSendMessageService {
 
 
         for(User user: getAllUsers()){
-            userDispatcher.send(message.getPayload(), user.getUuid(), user);
+
+            //criando um novo correlationid e concatenando no id das mensagens anteriores
+            final var correlationId = message.getId().continueWith(BathSendMessageService.class.getSimpleName());
+
+            userDispatcher.send(message.getPayload(), user.getUuid(), correlationId, user);
         }
 
     }
