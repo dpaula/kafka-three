@@ -16,7 +16,7 @@ import java.util.concurrent.ExecutionException;
  */
 class KafkaDispatcher<T> implements Closeable {
 
-    private final KafkaProducer<String, T> producer;
+    private final KafkaProducer<String, Message<T>> producer;
 
     KafkaDispatcher() {
 
@@ -52,7 +52,10 @@ class KafkaDispatcher<T> implements Closeable {
         return properties;
     }
 
-    public void send(String topico, String key, T value) throws ExecutionException, InterruptedException {
+    public void send(String topico, String key, T payload) throws ExecutionException, InterruptedException {
+
+        //encapsulando meu objeto (pauload) dentro da minha mensagem, com id
+        final var value = new Message<T>(new CorrelationId(), payload);
 
         //mensagem que tera a mesma informação, tanto pra chave quanto o valor
         var record = new ProducerRecord<>(topico, key, value);

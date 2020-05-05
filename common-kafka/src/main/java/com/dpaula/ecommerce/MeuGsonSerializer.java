@@ -11,7 +11,7 @@ import org.apache.kafka.common.serialization.Serializer;
  */
 public class MeuGsonSerializer<T> implements Serializer<T> {
 
-    private final Gson gson = new GsonBuilder().create();
+    private final Gson gson = new GsonBuilder().registerTypeAdapter(Message.class, new MessageAdapter()).create();
 
     /**
      *
@@ -24,6 +24,7 @@ public class MeuGsonSerializer<T> implements Serializer<T> {
      */
     @Override
     public byte[] serialize(String s, T t) {
+
         return gson.toJson(t).getBytes();
     }
 }
