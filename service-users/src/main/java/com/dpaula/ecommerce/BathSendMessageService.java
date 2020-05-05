@@ -72,7 +72,7 @@ public class BathSendMessageService {
 
     private List<User> getAllUsers() throws SQLException {
 
-        final var selectUuidFromUsuers = connection.prepareStatement("select uuid from usuers").executeQuery();
+        final var selectUuidFromUsuers = connection.prepareStatement("select uuid from users").executeQuery();
 
         final var users = new ArrayList<User>();
         while (selectUuidFromUsuers.next()){
