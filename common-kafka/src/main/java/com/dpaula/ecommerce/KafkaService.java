@@ -19,7 +19,7 @@ public class KafkaService<T> implements Closeable {
     private final KafkaConsumer<String, Message<T>> consumer;
     private String grupoId;
 
-    KafkaService(String grupoId, String topico, ConsumerFunction<T> parse, Class<T> type, Map<String, String> propriedadesEstras) {
+    KafkaService(String grupoId, String topico, ConsumerFunction<T> parse, Map<String, String> propriedadesEstras) {
         this.grupoId = grupoId;
         this.parse = parse;
         this.overrideProperties = propriedadesEstras;
@@ -33,7 +33,7 @@ public class KafkaService<T> implements Closeable {
 
     }
 
-    KafkaService(String grupoId, Pattern topico, ConsumerFunction<T> parse, Class<T> type, Map<String, String> propriedadesEstras) {
+    KafkaService(String grupoId, Pattern topico, ConsumerFunction<T> parse, Map<String, String> propriedadesEstras) {
         this.grupoId = grupoId;
         this.parse = parse;
         this.overrideProperties = propriedadesEstras;
@@ -59,6 +59,8 @@ public class KafkaService<T> implements Closeable {
         properties.setProperty(ConsumerConfig.GROUP_ID_CONFIG, grupoId);
         // definindo um id para o consumidor
         properties.setProperty(ConsumerConfig.CLIENT_ID_CONFIG, grupoId + "-" + UUID.randomUUID().toString());
+        // definindo que o número máximo de mensagens consumidas por vez será de 1 mensagem
+        properties.setProperty(ConsumerConfig.MAX_POLL_RECORDS_CONFIG, "1");
 
         // definindo as propriedades que deseja sobreescrever
         properties.putAll(overrideProperties);

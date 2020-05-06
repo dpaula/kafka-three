@@ -1,0 +1,458 @@
+{
+    "className": "PortalRetornaServicosAdicionaisWebService",
+    "classLocation": "code-extension",
+    "status": "SUCCESS",
+    "message": "OK",
+    "parameter": [
+        {
+            "numeroProcesso": "2002135540",
+            "tipoProcesso": "DI",
+            "booking": "CDSZN197884",
+            "pentagrama": "KOLEM176E",
+            "cliente": "MARILLIAM COMERCIO, IMPORTACAO E EXPORTACAO DE ARTIGOS DOMESTICOS LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "02288379000102"
+        },
+        {
+            "numeroProcesso": "2002135540",
+            "tipoProcesso": "DI",
+            "booking": "CDSZN197884",
+            "pentagrama": "KOLEM176E",
+            "cliente": "MARILLIAM COMERCIO, IMPORTACAO E EXPORTACAO DE ARTIGOS DOMESTICOS LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "02288379000102"
+        },
+        {
+            "numeroProcesso": "2002135540",
+            "tipoProcesso": "DI",
+            "booking": "CDSZN197884",
+            "pentagrama": "KOLEM176E",
+            "cliente": "MARILLIAM COMERCIO, IMPORTACAO E EXPORTACAO DE ARTIGOS DOMESTICOS LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "02288379000102"
+        },
+        {
+            "numeroProcesso": "2002135540",
+            "tipoProcesso": "DI",
+            "booking": "CDSZN197884",
+            "pentagrama": "KOLEM176E",
+            "cliente": "MARILLIAM COMERCIO, IMPORTACAO E EXPORTACAO DE ARTIGOS DOMESTICOS LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "02288379000102"
+        },
+        {
+            "numeroProcesso": "2002078679",
+            "tipoProcesso": "DI",
+            "booking": "05BRZ1912072",
+            "pentagrama": "KOLEM176E",
+            "cliente": "ATTIC COMERCIO INTERNACIONAL LTDA.",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "24542535000233"
+        },
+        {
+            "numeroProcesso": "2002074525",
+            "tipoProcesso": "DI",
+            "booking": "TAO0319120080",
+            "pentagrama": "KOLEM176E",
+            "cliente": "DROMOS COMERCIAL IMPORTADORA E EXPORTADORA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "17184970000197"
+        },
+        {
+            "numeroProcesso": "2002149312",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242281",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002071623",
+            "tipoProcesso": "DI",
+            "booking": "NBOIOA19120389",
+            "pentagrama": "KOLEM176E",
+            "cliente": "ASCENSUS TRADING & LOGISTICA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "07635245000134"
+        },
+        {
+            "numeroProcesso": "2002071623",
+            "tipoProcesso": "DI",
+            "booking": "NBOIOA19120389",
+            "pentagrama": "KOLEM176E",
+            "cliente": "ASCENSUS TRADING & LOGISTICA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "07635245000134"
+        },
+        {
+            "numeroProcesso": "2002071623",
+            "tipoProcesso": "DI",
+            "booking": "NBOIOA19120389",
+            "pentagrama": "KOLEM176E",
+            "cliente": "ASCENSUS TRADING & LOGISTICA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "07635245000134"
+        },
+        {
+            "numeroProcesso": "2002071623",
+            "tipoProcesso": "DI",
+            "booking": "NBOIOA19120389",
+            "pentagrama": "KOLEM176E",
+            "cliente": "ASCENSUS TRADING & LOGISTICA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "07635245000134"
+        },
+        {
+            "numeroProcesso": "2002148243",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242280",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002148243",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242280",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002074525",
+            "tipoProcesso": "DI",
+            "booking": "TAO0319120080",
+            "pentagrama": "KOLEM176E",
+            "cliente": "DROMOS COMERCIAL IMPORTADORA E EXPORTADORA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "17184970000197"
+        },
+        {
+            "numeroProcesso": "2002074525",
+            "tipoProcesso": "DI",
+            "booking": "TAO0319120080",
+            "pentagrama": "KOLEM176E",
+            "cliente": "DROMOS COMERCIAL IMPORTADORA E EXPORTADORA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "17184970000197"
+        },
+        {
+            "numeroProcesso": "2002148243",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242280",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002148243",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242280",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002148243",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242280",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2000307234",
+            "tipoProcesso": "DTC",
+            "booking": "*910034731",
+            "pentagrama": "CMRIG53S1",
+            "cliente": "GDC ALIMENTOS S.A",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "02279324000136"
+        },
+        {
+            "numeroProcesso": "2002007771",
+            "tipoProcesso": "DI",
+            "booking": "CHS0145102",
+            "pentagrama": "SMHON004N",
+            "cliente": "BMW DO BRASIL LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00882430001156"
+        },
+        {
+            "numeroProcesso": "2002007771",
+            "tipoProcesso": "DI",
+            "booking": "CHS0145102",
+            "pentagrama": "SMHON004N",
+            "cliente": "BMW DO BRASIL LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00882430001156"
+        },
+        {
+            "numeroProcesso": "2000426748",
+            "tipoProcesso": "DTC",
+            "booking": "*CNCC194824",
+            "pentagrama": "BARBA815E",
+            "cliente": "ASIA SHIPPING TRANSPORTES INTERNACIONAIS LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "01137526000180"
+        },
+        {
+            "numeroProcesso": "2000426748",
+            "tipoProcesso": "DTC",
+            "booking": "*CNCC194824",
+            "pentagrama": "BARBA815E",
+            "cliente": "ASIA SHIPPING TRANSPORTES INTERNACIONAIS LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "01137526000180"
+        },
+        {
+            "numeroProcesso": "2000426748",
+            "tipoProcesso": "DTC",
+            "booking": "*CNCC194824",
+            "pentagrama": "BARBA815E",
+            "cliente": "ASIA SHIPPING TRANSPORTES INTERNACIONAIS LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "01137526000180"
+        },
+        {
+            "numeroProcesso": "2000426748",
+            "tipoProcesso": "DTC",
+            "booking": "*CNCC194824",
+            "pentagrama": "BARBA815E",
+            "cliente": "ASIA SHIPPING TRANSPORTES INTERNACIONAIS LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "01137526000180"
+        },
+        {
+            "numeroProcesso": "2002148243",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242280",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002148243",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242280",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002148243",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242280",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002007771",
+            "tipoProcesso": "DI",
+            "booking": "CHS0145102",
+            "pentagrama": "SMHON004N",
+            "cliente": "BMW DO BRASIL LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00882430001156"
+        },
+        {
+            "numeroProcesso": "2002135540",
+            "tipoProcesso": "DI",
+            "booking": "CDSZN197884",
+            "pentagrama": "KOLEM176E",
+            "cliente": "MARILLIAM COMERCIO, IMPORTACAO E EXPORTACAO DE ARTIGOS DOMESTICOS LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "02288379000102"
+        },
+        {
+            "numeroProcesso": "2002109388",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242279",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002109388",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242279",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002109388",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242279",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002109388",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242279",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002109388",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242279",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002109388",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242279",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2001287193",
+            "tipoProcesso": "DI",
+            "booking": "*SUDUA9FRA006549A",
+            "pentagrama": "CASRL002N",
+            "cliente": "COOPERATIVA AGRARIA AGROINDUSTRIAL",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "77890846005723"
+        },
+        {
+            "numeroProcesso": "2001287193",
+            "tipoProcesso": "DI",
+            "booking": "*SUDUA9FRA006549A",
+            "pentagrama": "CASRL002N",
+            "cliente": "COOPERATIVA AGRARIA AGROINDUSTRIAL",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "77890846005723"
+        },
+        {
+            "numeroProcesso": "2002148243",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242280",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002148243",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242280",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002148243",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242280",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002148243",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242280",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002148243",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242280",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002148243",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242280",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002148243",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242280",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002148243",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242280",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002148243",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242280",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002148243",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242280",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002148243",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242280",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        },
+        {
+            "numeroProcesso": "2002148243",
+            "tipoProcesso": "DI",
+            "booking": "*NBDN242280",
+            "pentagrama": "KOLEM176E",
+            "cliente": "SAMSUNG ELETRONICA DA AMAZONIA LTDA",
+            "categoriaFaturamento": "IMPRT",
+            "cnpjCliente": "00280273001028"
+        }
+    ]
+}

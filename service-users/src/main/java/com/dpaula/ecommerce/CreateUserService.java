@@ -42,7 +42,6 @@ public class CreateUserService {
         try (KafkaService<Order> service = new KafkaService<>(CreateUserService.class.getSimpleName()+"5",
                 "ECOMMERCE_NEW_ORDER",
                 fraudService::parse,
-                Order.class,
                 Map.of())) {
 
             service.run();

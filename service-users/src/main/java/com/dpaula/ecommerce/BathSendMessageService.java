@@ -47,7 +47,6 @@ public class BathSendMessageService {
         try (var service = new KafkaService<>(BathSendMessageService.class.getSimpleName(),
                 "ECOMMERCE_SEND_MESSAGE_TO_ALL_USERS",
                 bathService::parse,
-                String.class,
                 Map.of())) {
 
             service.run();
