@@ -62,13 +62,15 @@ public class BathSendMessageService {
         System.out.println("Processando novo batch");
         System.out.println("Tópico " + message.getPayload());
 
+        if(true) throw new RuntimeException("Deu um erro que eu forcei!!!");
 
         for(User user: getAllUsers()){
 
             //criando um novo correlationid e concatenando no id das mensagens anteriores
             final var correlationId = message.getId().continueWith(BathSendMessageService.class.getSimpleName());
 
-            userDispatcher.send(message.getPayload(), user.getUuid(), correlationId, user);
+            userDispatcher.sendAsync(message.getPayload(), user.getUuid(), correlationId, user);
+            System.out.println("Acho que enviei para o usuario");
         }
 
     }

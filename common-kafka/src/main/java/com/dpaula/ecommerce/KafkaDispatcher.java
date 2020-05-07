@@ -1,15 +1,13 @@
 package com.dpaula.ecommerce;
 
-import org.apache.kafka.clients.producer.Callback;
-import org.apache.kafka.clients.producer.KafkaProducer;
-import org.apache.kafka.clients.producer.ProducerConfig;
-import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.clients.producer.*;
 import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.io.Closeable;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
 
 /**
  * @author Fernando de Lima
@@ -51,8 +49,16 @@ class KafkaDispatcher<T> implements Closeable {
         return properties;
     }
 
+    //confirma que a mensagem foi enviada corretamente
     public void send(String topico, String key, CorrelationId correlationId, T payload) throws ExecutionException, InterruptedException {
+        final Future<RecordMetadata> future = sendAsync(topico, key, correlationId, payload);
 
+        // com o .get ele fica sincrono
+                future.get();
+    }
+
+    //não retorna a confirmação que a mensagem foi enviada
+    public Future<RecordMetadata> sendAsync(String topico, String key, CorrelationId correlationId, T payload) {
         //encapsulando meu objeto (pauload) dentro da minha mensagem, com id
         final var value = new Message<T>(correlationId, payload);
 
@@ -60,8 +66,7 @@ class KafkaDispatcher<T> implements Closeable {
         var record = new ProducerRecord<>(topico, key, value);
 
         // enviando uma mensagem
-        // com o .get ele fica sincrono
-        producer.send(record, getCallback()).get();
+        return producer.send(record, getCallback());
     }
 
     @Override
