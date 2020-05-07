@@ -68,20 +68,34 @@ public class KafkaService<T> implements Closeable {
         return properties;
     }
 
-    void run() {
-        while (true) {
-            // perguntando se tem mensagem no tópico por 100 ms
-            var records = consumer.poll(Duration.ofMillis(100));
-            if (records.isEmpty()) {
-                continue;
-            }
-            System.out.println("Encontrei " + records.count() + " registros");
+    void run() throws ExecutionException, InterruptedException {
+        try(var deadLetter = new KafkaDispatcher<>()) {
+            while (true) {
+                // perguntando se tem mensagem no tópico por 100 ms
+                var records = consumer.poll(Duration.ofMillis(100));
+                if (records.isEmpty()) {
+                    continue;
+                }
+                System.out.println("Encontrei " + records.count() + " registros");
 
-            for (var record : records) {
-                try {
-                    parse.consume(record);
-                } catch (Exception e) {
-                    e.printStackTrace();
+                for (var record : records) {
+                    try {
+                        parse.consume(record);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+
+                        //caso der erro, pega a mensagem
+                        final var message = record.value();
+
+                        //envia uma mensagem que deu erro (deadletter)
+                        deadLetter.send("ECOMMERCE_DEADLETTER",
+                                //passando como id o correlationId da mensagem consumida
+                                message.getId().toString(),
+                                //e concatenando a continuação do correlationId com DEADLETTER
+                                message.getId().continueWith("DeadLetter"),
+                                //mandando a mensagem consumida como json para responder
+                                new MeuGsonSerializer().serialize("", message));
+                    }
                 }
             }
         }

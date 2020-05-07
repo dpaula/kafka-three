@@ -14,7 +14,7 @@ public class ReadingReportService {
     // local do arquivo
     private static final Path SOURCE = new File("src/main/resources/report.txt").toPath();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
 
         var reportService = new ReadingReportService();
 

@@ -40,7 +40,7 @@ public class BathSendMessageService {
         }
     }
 
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) throws SQLException, ExecutionException, InterruptedException {
 
         var bathService = new BathSendMessageService();
 
